@@ -526,7 +526,7 @@ export default function FullStackBootcampPage() {
             <FadeInLeft>
               <div className="w-64 h-64 rounded-full overflow-hidden shadow-lg">
                 <Image
-                  src="/placeholder.svg?height=300&width=300"
+                  src="/gaurys.jpeg"
                   alt="Instructor de Full Stack"
                   width={300}
                   height={300}
@@ -537,12 +537,10 @@ export default function FullStackBootcampPage() {
 
             <FadeInRight>
               <div>
-                <h3 className="text-2xl font-bold text-primary mb-2">Nombre del Instructor</h3>
+                <h3 className="text-2xl font-bold text-primary mb-2">Gauris Javier</h3>
                 <p className="text-secondary font-medium mb-4">Full Stack Developer & Lead Instructor</p>
                 <p className="text-gray-700 mb-4">
-                  Desarrollador Full Stack con más de 8 años de experiencia en la industria. Ha trabajado en startups y
-                  grandes empresas, liderando equipos de desarrollo y creando aplicaciones web de alto rendimiento.
-                  Apasionado por compartir conocimientos y formar a la próxima generación de desarrolladores.
+                  Gauris Javier es un desarrollador senior con más de 13 años de experiencia en tecnologías móviles y backend, especializado en Flutter, Android/Kotlin y .NET. Ha colaborado con empresas destacadas como SoFi, Crossrope, TruVideo, Baptist Health South Florida, Scotiabank y BairesDev, desarrollando y optimizando aplicaciones de alto impacto. Posee fuertes habilidades de liderazgo técnico y mentoría, siendo actualmente instructor en Talendig. Complementa su experiencia con conocimientos en cloud computing, inteligencia artificial y Machine Learning, siempre comprometido con entregar soluciones robustas y de alta calidad.
                 </p>
                 <div className="flex gap-4">
                   <Button variant="outline" className="rounded-full">

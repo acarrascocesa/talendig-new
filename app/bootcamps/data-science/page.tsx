@@ -511,7 +511,7 @@ export default function DataScienceBootcampPage() {
             <FadeInLeft>
               <div className="w-64 h-64 rounded-full overflow-hidden shadow-lg">
                 <Image
-                  src="/placeholder.svg?height=300&width=300"
+                  src="/jeffrey.jpeg"
                   alt="Instructor de Data Science"
                   width={300}
                   height={300}
@@ -522,12 +522,18 @@ export default function DataScienceBootcampPage() {
 
             <FadeInRight>
               <div>
-                <h3 className="text-2xl font-bold text-primary mb-2">Nombre del Instructor</h3>
+                <h3 className="text-2xl font-bold text-primary mb-2">Jeffry Saldaña</h3>
                 <p className="text-secondary font-medium mb-4">Data Scientist & Lead Instructor</p>
                 <p className="text-gray-700 mb-4">
-                  Profesional con más de 10 años de experiencia en Data Science y Machine Learning. Ha trabajado en
-                  proyectos para empresas como Google, Amazon y Microsoft, implementando soluciones de análisis de datos
-                  y modelos predictivos.
+                  Ingeniero en Software con 8 años de experiencia en ingeniería y análisis de datos. Combino
+                  experiencia técnica, precisión analítica y una pasión por transformar datos sin procesar en
+                  insights accionables. En roles anteriores, he sobresalido en el diseño de canalizaciones de datos
+                  eficientes, modelado avanzado de datos y creación de dashboards impactantes utilizando
+                  herramientas como Power BI y Python. Mi habilidad para colaborar con equipos, simplificar
+                  datos complejos y comunicar insights de manera efectiva ha respaldado consistentemente la
+                  toma de decisiones estratégicas y el crecimiento empresarial. Comprometido con la mejora
+                  continua, me mantengo actualizado con las tendencias emergentes para ofrecer soluciones
+                  innovadoras basadas en datos que impulsan el éxito organizacional.
                 </p>
                 <div className="flex gap-4">
                   <Button variant="outline" className="rounded-full">
