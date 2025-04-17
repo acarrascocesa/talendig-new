@@ -4,7 +4,19 @@ import type React from "react"
 
 import { useState, useRef, useEffect } from "react"
 import { motion } from "framer-motion"
-import { Code, Database, Shield, Cloud, Clock, BarChart, GraduationCap } from "lucide-react"
+import {
+  Database,
+  Code,
+  Cloud,
+  Shield,
+  LayoutGrid,
+  Clock,
+  BarChart,
+  GraduationCap,
+  Palette,
+  TestTube,
+  Brain,
+} from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { FadeInUp, PulseButton } from "@/components/animations"
 
@@ -64,6 +76,48 @@ const bootcamps: BootcampData[] = [
     color: "from-primary to-secondary",
     skills: ["Ethical Hacking", "Network Security", "Cryptography", "Security Auditing", "Incident Response"],
   },
+  {
+    id: "dynamics-365",
+    title: "Microsoft Dynamics 365 F&O",
+    description: "Desarrolla soluciones personalizadas en Microsoft Dynamics 365 Finance and Operations con X++.",
+    icon: <LayoutGrid className="h-10 w-10" />,
+    duration: "3 meses",
+    level: "Todos los niveles",
+    color: "from-primary to-secondary",
+    skills: ["X++", "Dynamics 365", "Finance & Operations", "ERP", "Desarrollo de módulos"],
+  },
+  {
+    id: "ux-ui-design",
+    title: "UX/UI Design",
+    description: "Aprende a diseñar experiencias e interfaces de usuario centradas en las necesidades del usuario.",
+    icon: <Palette className="h-10 w-10" />,
+    duration: "3 meses",
+    level: "Todos los niveles",
+    color: "from-primary to-secondary",
+    skills: ["Design Thinking", "Figma", "Prototyping", "User Research", "Design Systems"],
+  },
+  {
+    id: "software-testing",
+    title: "Software Testing",
+    description:
+      "Domina la automatización de pruebas de software con Selenium, Cucumber y herramientas de API testing.",
+    icon: <TestTube className="h-10 w-10" />,
+    duration: "20 horas",
+    level: "Intermedio",
+    color: "from-primary to-secondary",
+    skills: ["Selenium", "Cucumber", "Java", "API Testing", "Page Object Model"],
+  },
+  {
+    id: "ia-generativa",
+    title: "Inteligencia Artificial Generativa",
+    description:
+      "Aprende a desarrollar y aplicar modelos de IA generativa para crear contenido innovador en texto, imagen y audio.",
+    icon: <Brain className="h-10 w-10" />,
+    duration: "12 semanas",
+    level: "Intermedio",
+    color: "from-primary to-secondary",
+    skills: ["Azure OpenAI", "LLMs", "Generación de Imágenes", "Prompt Engineering", "IA Responsable"],
+  },
 ]
 
 export default function BootcampCarousel() {
@@ -114,7 +168,7 @@ export default function BootcampCarousel() {
         </FadeInUp>
 
         {/* Grid para pantallas grandes */}
-        <div className="hidden md:grid grid-cols-1 lg:grid-cols-4 gap-4">
+        <div className="hidden md:grid grid-cols-1 lg:grid-cols-3 xl:grid-cols-4 gap-4">
           {bootcamps.map((bootcamp) => (
             <FadeInUp key={bootcamp.id} delay={0.1 * bootcamps.indexOf(bootcamp)}>
               <BootcampCard bootcamp={bootcamp} />
@@ -131,7 +185,14 @@ export default function BootcampCarousel() {
               dragConstraints={dragConstraints}
               initial={{ x: 0 }}
               animate={{ x: 0 }}
-              transition={{ type: "spring", stiffness: 300, damping: 30 }}
+              transition={{
+                x: {
+                  repeat: Number.POSITIVE_INFINITY,
+                  repeatType: "loop",
+                  duration: 40,
+                  ease: "linear",
+                },
+              }}
             >
               {bootcamps.map((bootcamp) => (
                 <motion.div key={bootcamp.id} className="min-w-[80vw] p-2">
@@ -215,4 +276,3 @@ function BootcampCard({ bootcamp }: { bootcamp: BootcampData }) {
     </div>
   )
 }
-

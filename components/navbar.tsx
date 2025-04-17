@@ -4,7 +4,22 @@ import { useState, useEffect, useRef } from "react"
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { Menu, X, ChevronDown, Database, Code, Cloud, Shield, Laptop, Users, School } from "lucide-react"
+import {
+  Menu,
+  X,
+  ChevronDown,
+  Database,
+  Code,
+  Cloud,
+  Shield,
+  Laptop,
+  Users,
+  School,
+  LayoutGrid,
+  Palette,
+  TestTube,
+  Brain,
+} from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
 
 // Datos de carreras técnicas para el menú desplegable
@@ -42,6 +57,30 @@ const bootcampItems = [
     name: "Cybersecurity",
     href: "/bootcamps/cybersecurity",
     icon: <Shield className="h-4 w-4 text-yellow-500" />,
+  },
+  {
+    id: "dynamics-365",
+    name: "Microsoft Dynamics 365 F&O",
+    href: "/bootcamps/dynamics-365",
+    icon: <LayoutGrid className="h-4 w-4 text-purple-500" />,
+  },
+  {
+    id: "ux-ui-design",
+    name: "UX/UI Design",
+    href: "/bootcamps/ux-ui-design",
+    icon: <Palette className="h-4 w-4 text-orange-500" />,
+  },
+  {
+    id: "software-testing",
+    name: "Software Testing",
+    href: "/bootcamps/software-testing",
+    icon: <TestTube className="h-4 w-4 text-teal-500" />,
+  },
+  {
+    id: "ia-generativa",
+    name: "Inteligencia Artificial Generativa",
+    href: "/bootcamps/ia-generativa",
+    icon: <Brain className="h-4 w-4 text-red-500" />,
   },
 ]
 
@@ -272,4 +311,3 @@ export default function Navbar() {
     </nav>
   )
 }
-
