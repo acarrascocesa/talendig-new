@@ -19,6 +19,7 @@ import {
   Palette,
   TestTube,
   Brain,
+  Lock,
 } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
 
@@ -29,6 +30,12 @@ const carrerasItems = [
     name: "Técnico en desarrollo de software",
     href: "/desarrollo-software",
     icon: <Laptop className="h-4 w-4 text-indigo-500" />,
+  },
+  {
+    id: "ciberseguridad",
+    name: "Técnico en ciberseguridad",
+    href: "/ciberseguridad",
+    icon: <Lock className="h-4 w-4 text-red-500" />,
   },
 ]
 

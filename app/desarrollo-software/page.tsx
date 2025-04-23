@@ -17,7 +17,7 @@ export default function DesarrolloSoftwarePage() {
   // Efecto de scroll suave
   useEffect(() => {
     // Función para manejar clics en enlaces internos
-    const handleLinkClick = (e) => {
+    const handleLinkClick = (e: { target: any; preventDefault: () => void }) => {
       const target = e.target
 
       // Verificar si es un enlace interno (href comienza con #)
