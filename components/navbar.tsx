@@ -37,6 +37,12 @@ const carrerasItems = [
     href: "/ciberseguridad",
     icon: <Lock className="h-4 w-4 text-red-500" />,
   },
+  {
+    id: "data-science-python",
+    name: "Data Science Python y Machine Learning",
+    href: "/data-science-python",
+    icon: <Database className="h-4 w-4 text-blue-500" />,
+  },
 ]
 
 // Datos de bootcamps para el menú desplegable
