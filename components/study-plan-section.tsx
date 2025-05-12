@@ -1,6 +1,6 @@
 import { FadeInUp, StaggerItem } from "@/components/animations"
 
-type StudyModule = {
+export type StudyModule = {
   month: number
   title: string
   topics: string[]
@@ -121,7 +121,7 @@ export default function StudyPlanSection() {
           {studyModules.map((module) => (
             <StaggerItem key={module.month}>
               <div className="bg-white rounded-lg shadow-md p-6 h-full flex flex-col">
-                <div className="flex items-center mb-4">
+                <div className="flex items-center mb-4"> 
                   <div className="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold flex-shrink-0">
                     {module.month}
                   </div>
