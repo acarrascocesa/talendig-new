@@ -7,8 +7,11 @@ export const metadata: Metadata = {
   title: "Talendig - Bootcamps de Tecnología",
   description:
     "Especialistas en bootcamps de tecnología. Aprende programación, desarrollo web, ciencia de datos y más con nuestra metodología innovadora.",
-    generator: 'v0.dev'
-}
+icons: {
+    icon: "/favicon.png",            // para navegadores de escritorio
+    apple: "/favicon.png",  // iOS/Android
+    shortcut: "/favicon.png",
+  },}
 
 export default function RootLayout({
   children,
